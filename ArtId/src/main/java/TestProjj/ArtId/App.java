@@ -15,5 +15,41 @@ public class App
         new Profiler.Builder()
         .profilingGroupName("CodeGuruTestProfileGroup")
         .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
     }
 }
