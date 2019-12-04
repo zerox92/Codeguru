@@ -1,5 +1,10 @@
 package TestProjj.ArtId;
 
+import java.io.BufferedInputStream;
+import java.io.DataInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+
 /**
  * Hello world!
  *
@@ -53,5 +58,25 @@ public class App
 //        .build().start();
         
         System.out.println( "Done man done !!!!" );
+        
+        
+        String fileName = "intData.dat" ;   long sum = 0;
+
+        try
+        {      
+          DataInputStream instr = 
+            new DataInputStream(
+              new BufferedInputStream(
+                new FileInputStream( fileName  ) ) );
+
+          sum += instr.readLong();
+          sum += instr.readLong();
+          System.out.println( "The sum is: " + sum );
+          instr.close();
+        }
+        catch ( IOException iox )
+        {
+          System.out.println("Problem reading " + fileName );
+        }
     }
 }
