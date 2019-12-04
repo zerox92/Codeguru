@@ -15,10 +15,5 @@ public class App
         new Profiler.Builder()
         .profilingGroupName("CodeGuruTestProfileGroup")
         .build().start();
-        System.out.println( "Testing it out" );
-        System.out.println( "Testing it out" );
-        System.out.println( "Testing it out" );
-        System.out.println( "Testing it out" );
-        System.out.println( "Testing it out" );
     }
 }
