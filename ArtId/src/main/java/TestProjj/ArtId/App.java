@@ -13,7 +13,8 @@ public class App
     {
         System.out.println( "Hello World!" );
         new Profiler.Builder()
-        .profilingGroupName("Multipart-Development")
+        .profilingGroupName("CodeGuruTestProfileGroup")
         .build().start();
+        System.out.println( "Testing it out" );
     }
 }
