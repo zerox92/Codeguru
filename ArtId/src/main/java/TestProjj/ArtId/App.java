@@ -1,5 +1,10 @@
 package TestProjj.ArtId;
 
+import java.io.BufferedInputStream;
+import java.io.DataInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+
 /**
  * Hello world!
  *
@@ -15,10 +20,88 @@ public class App
         new Profiler.Builder()
         .profilingGroupName("CodeGuruTestProfileGroup")
         .build().start();
-        System.out.println( "Testing it out" );
-        System.out.println( "Testing it out" );
-        System.out.println( "Testing it out" );
-        System.out.println( "Testing it out" );
-        System.out.println( "Testing it out" );
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        new Profiler.Builder()
+        .profilingGroupName("CodeGuruTestProfileGroup")
+        .build().start();
+        
+        System.out.println( "Done man done !!!!" );
+        
+        
+        String fileName = "intData.dat" ;   long sum = 0;
+
+        try
+        {      
+          DataInputStream instr = 
+            new DataInputStream(
+              new BufferedInputStream(
+                new FileInputStream( fileName  ) ) );
+
+          sum += instr.readLong();
+          sum += instr.readLong();
+          System.out.println( "The sum is: " + sum );
+          instr.close();
+        }
+        catch ( IOException iox )
+        {
+          System.out.println("Problem reading " + fileName );
+        }
+        
+        
+        System.out.println( "Hello World!" );
+        System.out.println( "Hello World!" );
+        System.out.println( "Hello World!" );
+        System.out.println( "Hello World!" );
+        
+        String fileName1 = "intData.dat" ;   long sum1 = 0;
+
+        try
+        {      
+          DataInputStream instr = 
+            new DataInputStream(
+              new BufferedInputStream(
+                new FileInputStream( fileName1  ) ) );
+
+          sum1 += instr.readLong();
+          sum1 += instr.readLong();
+          System.out.println( "The sum is: " + sum1 );
+          instr.close();
+        }
+        catch ( IOException iox )
+        {
+          System.out.println("Problem reading " + fileName1 );
+        }
     }
 }
